@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelmate - Seat Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Select Your Seats</h1>
+    </header>
+
+    <main class="seat-selection-container">
+        <div class="bus-layout">
+            <div class="seat-map" id="seat-map">
+                <div class="driver-cabin">
+                    <span>Driver</span>
+                    <span>Steering</span>
+                </div>
+                <div class="seat-rows" id="seat-rows"></div>
+            </div>
+
+            <div class="seat-legend">
+                <div><span class="seat available"></span> Available</div>
+                <div><span class="seat unavailable"></span> Booked</div>
+                <div><span class="seat selected"></span> Selected</div>
+                <div><span class="seat ladies"></span> Ladies Only</div>
+            </div>
+        </div>
+
+        <div class="booking-summary">
+            <h3>Your Selection</h3>
+            <p>Seats: <span id="selected-seats">None</span></p>
+            <p>Total: ₹<span id="total-price">0</span></p>
+            <button id="proceed-to-payment">Proceed to Payment</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Travelmate. All rights reserved.</p>
+    </footer>
+    
+<script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Travelmate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styling for About Us page */
+        #About-Us {
+            margin-top: 120px;
+            padding: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #About-Us h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        #About-Us p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+        }
+
+        #About-Us strong {
+            color: #e74c3c;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            #About-Us {
+                margin-top: 100px;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>🚌 Travelmate <span class="badge pulse"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="Book.html" class="nav-link">🎫 Book</a></li>
+                <li><a href="Login.html" class="nav-link">🔑 Login</a></li>
+                <li><a href="About Us.html" class="nav-link">ℹ️ About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="About-Us">
+            <h2>Who We Are?</h2>
+            <p><strong>🚌 Traveling Experience with Travelmate:</strong> We make travel seamless with easy bookings, comfortable seats, and top-notch service.</p>
+            
+            <h2>Why Choose Travelmate?</h2>
+            <p><strong>❓ Why Travelmate?</strong> We offer the best customer service, real-time tracking, and secure online bookings.</p>
+
+            <h2>What Makes Us Different?</h2>
+            <p><strong>🔍 What Makes Us Different?</strong> Affordable pricing, AI-powered route suggestions, and flexible cancellations.</p>
+
+            <h2>About Our Company</h2>
+            <p><strong>🏢 About Our Company:</strong> Founded in 2025, Travelmate is dedicated to making bus travel effortless across the country.</p>
+        
+            <h2>Our Location :</h2>
+            <style>
+                #map { height: 400px; 
+                        width: 100% ;}
+                </style>
+                
+                 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+                     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+                     crossorigin=""/>
+                 <!-- Make sure you put this AFTER Leaflet's CSS -->
+                 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                     crossorigin=""></script>
+                 <div id="map"></div>
+                <script>
+                var map = L.map('map').setView([18.9902, 73.1277], 13);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+                var marker = L.marker([18.9902, 73.1277]).addTo(map);
+                </script>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travelmate. All rights reserved.</p>
+    </footer>
+    
+<script defer src="script.js"></script>
+</body>
+</html>

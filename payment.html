@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Travelmate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Payment Gateway</h1>
+    </header>
+
+    <main>
+        <h2>Complete Your Payment</h2>
+        <label for="payment-method">Select Payment Method:</label>
+        <select id="payment-method">
+            <option value="card">Credit/Debit Card</option>
+            <option value="upi">UPI</option>
+        </select>
+
+        <div id="card-details">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+        </div>
+
+        <button id="pay-now">Pay Now</button>
+
+        <div id="payment-popup" class="hidden payment-popup">
+            <p>Processing Payment...</p>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    document.getElementById('pay-now').addEventListener('click', () => {
+        const paymentData = {
+            amount: JSON.parse(localStorage.getItem('totalFare')),
+            seats: JSON.parse(localStorage.getItem('selectedSeats')),
+            bus: JSON.parse(localStorage.getItem('selectedBus'))
+        };
+        
+        document.getElementById('payment-popup').classList.remove('hidden');
+        
+        setTimeout(() => {
+            window.location.href = 'confirmation.html';
+        }, 2000);
+    });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Travelmate. All rights reserved.</p>
+    </footer>
+    
+<script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelmate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="brand-container">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTggMTBINmExIDEgMCAwIDAtMSAxdjhhMSAxIDAgMCAwIDFoMXYyYTEgMSAwIDAgMCAxIDFoMTBhMSAxIDAgMCAwIDEtMXYtMmgxYTEgMSAwIDAgMCAxLTF2LThhMSAxIDAgMCAwLTEtMXpNNiAxMmgxMnYySDZ6bTAgNHY0aDEydi00em0yLTNoNHYxSDh6Ii8+PC9zdmc+" 
+             class="bus-logo" 
+             alt="Bus Logo">
+            <h1 class="site-title">🚌 Travelmate</h1>
+        </div>    
+        <!-- Move Toggle Dark Mode to top-right -->
+        <button id="dark-mode-toggle" class="dark-mode-toggle">☀️</button>
+        <nav class="nav-upward">
+            <ul>
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="Book.html" class="nav-link">🎫 Book</a></li>
+                <li><a href="Login.html" class="nav-link">🔑 Login</a></li>
+                <li><a href="About Us.html" class="nav-link">ℹ️ About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Enhanced Hero Section -->
+        <section class="hero animate__animated animate__zoomIn">
+            <div class="hero-content">
+                <h2>🌍 Explore the World with Travelmate!</h2>
+                <p>Real-time tracking, AI-powered suggestions, and unbeatable deals await you</p>
+                <div class="interactive-search">
+                    <div class="search-box">
+                        <input type="text" placeholder="Where are you going?" id="destination-input">
+                        <button class="cta-button" id="search-btn"><i class="fas fa-search"></i> Search</button>
+                    </div>
+                    <div class="suggestion-box hidden" id="suggestions">
+                        <!-- Suggestions will be populated dynamically -->
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item interactive-stat" data-tooltip="Over 1 million satisfied travelers!">
+                        <i class="fas fa-users"></i>
+                        <h3>1M+</h3>
+                        <p>Happy Travelers</p>
+                    </div>
+                    <div class="stat-item interactive-stat" data-tooltip="Serving over 500 routes daily">
+                        <i class="fas fa-route"></i>
+                        <h3>500+</h3>
+                        <p>Daily Routes</p>
+                    </div>
+                    <div class="stat-item interactive-stat" data-tooltip="Committed to your safety">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>100%</h3>
+                        <p>Safe Travel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2 class="section-title">Why Travel with Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card interactive-feature">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Instant Booking</h3>
+                    <p>Book in seconds with our streamlined process</p>
+                </div>
+                <div class="feature-card interactive-feature">
+                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Live Tracking</h3>
+                    <p>Track your bus in real-time</p>
+                </div>
+                <div class="feature-card interactive-feature">
+                    <div class="feature-icon"><i class="fas fa-percentage"></i></div>
+                    <h3>Best Deals</h3>
+                    <p>Exclusive discounts just for you</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map Preview -->
+        <section class="tracking-preview">
+            <div class="tracking-content">
+                <h2>Live Bus Tracking <i class="fas fa-satellite"></i></h2>
+                <div class="map-preview interactive-map">
+                    <div class="route-line"></div>
+                    <div class="bus-marker animate__animated animate__pulse animate__infinite"></div>
+                </div>
+                <p>Tracking 850+ buses nationwide in real-time</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="section-title">Traveler Stories</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card interactive-testimonial">
+                    <div class="user-avatar"><i class="fas fa-user-tie"></i></div>
+                    <p>"The easiest way to travel - highly recommend!"</p>
+                    <div class="user-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Online Bus Booking Promotion</h2>
+            <video width="800" height="400" controls>
+                <source src="Online Bus Ticketing - Promotional Animated Video.mp4" type="video/mp4">
+                <track label="English" kind="subtitles" srclang="en" src="buseng.vtt" default>
+                <track label="Marathi" kind="subtitles" srclang="ma" src="busmar.vtt">
+            </video>
+        </section>
+    </main>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h3>Get Travel Updates & Offers</h3>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button class="cta-button">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Travelmate</h4>
+                <p>Making travel simple, safe, and smart</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Book.html"><i class="fas fa-chevron-right"></i> Book Tickets</a></li>
+                    <li><a href="tracking.html"><i class="fas fa-chevron-right"></i> Track Bus</a></li>
+                    <li><a href="offers.html"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 24/7 Support</li>
+                    <li><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#6e1d1b1e1e011c1a2e1a1c0f180b02030f1a0b400d0103"><span class="__cf_email__" data-cfemail="41727471716e73754175736077646d6c6075642f626e6c">[email&#160;protected]</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Travelmate. All rights reserved. 🚌</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Firebase SDK -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+<!-- Your script.js -->
+<script defer src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9290b593692c4c20',t:'MTc0MzQzMzE1Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

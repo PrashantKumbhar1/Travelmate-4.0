@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelmate - Available Buses</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🚌 Available Buses</h1>
+    </header>
+
+    <main class="bus-listing">
+        <div class="filters-sidebar">
+            <h3>Filter Buses</h3>
+            <div class="filter-group">
+                <label><input type="checkbox" id="ac"> AC</label>
+                <label><input type="checkbox" id="non-ac"> Non-AC</label>
+                <label><input type="checkbox" id="sleeper"> Sleeper</label>
+                <label><input type="checkbox" id="seater"> Seater</label>
+            </div>
+            <button id="apply-filters">Apply Filters</button>
+        </div>
+
+        <div class="bus-container" id="buses"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Travelmate. All rights reserved.</p>
+    </footer>
+    
+<script defer src="script.js"></script>
+</body>
+</html>

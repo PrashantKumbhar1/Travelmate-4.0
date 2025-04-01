@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Travelmate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>🚌 Travelmate <span class="badge pulse">Login</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="Book.html" class="nav-link">🎫 Book</a></li>
+                <li><a href="signup.html" class="nav-link">📝 Sign Up</a></li>
+                <li><a href="About Us.html" class="nav-link">ℹ️ About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container animate__animated animate__fadeIn">
+            <div class="form-header">
+                <i class="fas fa-user-lock fa-3x"></i>
+                <h2>Welcome Back! 👋</h2>
+            </div>
+
+            <div id="login-form">
+                <div class="input-group">
+                    <label>📧 Email or 📱 Mobile:</label>
+                    <input type="text" id="login-email" placeholder="Enter Email/Mobile">
+                    <i class="fas fa-at input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                    <label>🔑 Password:</label>
+                    <input type="password" id="login-password" placeholder="Enter Password">
+                    <i class="fas fa-lock input-icon"></i>
+                </div>
+
+                <button class="btn-login" onclick="login()">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+
+                <div class="form-footer">
+                    <p>New to Travelmate? <a href="signup.html">Create Account</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travelmate. All rights reserved. 🚌</p>
+    </footer>
+    
+     <!-- Firebase SDK (Compat Versions) -->
+     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+ 
+     <!-- Your script.js -->
+     <script defer src="script.js"></script>
+</body>
+</html>

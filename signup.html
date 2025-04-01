@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Travelmate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>🚌 Travelmate <span class="badge pulse">Sign Up</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="login.html" class="nav-link">🔑 Login</a></li>
+                <li><a href="Book.html" class="nav-link">🎫 Book</a></li>
+                <li><a href="About Us.html" class="nav-link">ℹ️ About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container animate__animated animate__fadeIn">
+            <div class="form-header">
+                <i class="fas fa-user-plus fa-3x"></i>
+                <h2>Create New Account 🎉</h2>
+            </div>
+            
+            <div id="signup-form">
+                <div class="input-group">
+                    <label>👤 Full Name:</label>
+                    <input type="text" id="signup-name" placeholder="Enter Full Name">
+                    <i class="fas fa-user input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                    <label>📱 Mobile Number:</label>
+                    <input type="text" id="signup-mobile" placeholder="Enter Mobile Number">
+                    <i class="fas fa-mobile-alt input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                    <label>📧 Email:</label>
+                    <input type="email" id="signup-email" placeholder="Enter Email">
+                    <i class="fas fa-envelope input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                    <label>🔒 Password:</label>
+                    <input type="password" id="signup-password" placeholder="Create Password">
+                    <i class="fas fa-lock input-icon"></i>
+                    <div class="password-strength"></div>
+                </div>
+
+                <button class="btn-signup" id="signup-btn">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </button>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="login.html">Login Here</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Travelmate. All rights reserved. 🚌</p>
+    </footer>
+
+    <!-- Firebase SDK (Compat Versions) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+    <!-- Your script.js -->
+    <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelmate - Book Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>🚌 Travelmate <span class="badge pulse">Book</span></h1>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">☀️</button>
+        <nav class="nav-upward">
+            <ul>
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="Book.html" class="nav-link">🎫 Book</a></li>
+                <li><a href="Login.html" class="nav-link">🔑 Login</a></li>
+                <li><a href="About Us.html" class="nav-link">ℹ️ About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Search for Buses</h2>
+        <label for="pickup">Pickup Location:</label>
+        <input type="text" id="pickup" placeholder="Enter pickup location">
+        
+        <label for="drop">Drop Location:</label>
+        <input type="text" id="drop" placeholder="Enter drop location">
+        
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date">
+
+        <button id="search-buses">Search</button>
+    </main>
+
+    <script>
+    document.getElementById('search-buses').addEventListener('click', () => {
+        const searchData = {
+            from: document.getElementById('pickup').value,
+            to: document.getElementById('drop').value,
+            date: document.getElementById('date').value
+        };
+        localStorage.setItem('searchData', JSON.stringify(searchData));
+        window.location.href = 'list_bus.html';
+    });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Travelmate. All rights reserved.</p>
+    </footer>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+    <!-- Your script.js -->
+    <script defer src="script.js"></script>
+</body>
+</html>
